@@ -95,7 +95,7 @@ def signup():
             "msg": "User added correctly"
         }
         return jsonify(response_body), 200
-
+    
     return jsonify({"msg": "User already exists"}), 404
 
 @app.route('/login', methods=['POST'])
